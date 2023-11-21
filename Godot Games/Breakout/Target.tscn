@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://d1i2iril4g6ug"]
+
+[ext_resource type="Script" path="res://Target.cs" id="1_w6ndp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8j75h"]
+size = Vector2(120, 32)
+
+[node name="Target" type="StaticBody2D" groups=["Bricks"]]
+script = ExtResource("1_w6ndp")
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+scale = Vector2(0.75, 1)
+color = Color(0.239216, 1, 1, 1)
+polygon = PackedVector2Array(0, 0, 160, 0, 160, 32, 0, 32)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(60, 16)
+shape = SubResource("RectangleShape2D_8j75h")

@@ -1,0 +1,261 @@
+[gd_scene load_steps=6 format=3 uid="uid://ygodpaxeyrwp"]
+
+[ext_resource type="PackedScene" uid="uid://bwav60lo0u476" path="res://paddle.tscn" id="1_7fa21"]
+[ext_resource type="Script" path="res://main.cs" id="1_y00fn"]
+[ext_resource type="PackedScene" uid="uid://bir3glocw2usm" path="res://ball.tscn" id="2_tvrxb"]
+[ext_resource type="PackedScene" uid="uid://d1i2iril4g6ug" path="res://Target.tscn" id="3_6legq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xoruu"]
+size = Vector2(832, 57)
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_y00fn")
+
+[node name="Paddle" parent="." instance=ExtResource("1_7fa21")]
+position = Vector2(424, 928)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PackedVector2Array(0, 0, 832, 0, 832, 1000, 960, -168, -184, -168, 0, 1000)
+
+[node name="Ball" parent="." instance=ExtResource("2_tvrxb")]
+position = Vector2(424, 872)
+collision_layer = 3
+
+[node name="Targets" type="Node2D" parent="."]
+
+[node name="Target" parent="Targets" instance=ExtResource("3_6legq")]
+position = Vector2(8, 8)
+
+[node name="Target2" parent="Targets" instance=ExtResource("3_6legq")]
+position = Vector2(8, 48)
+
+[node name="Target3" parent="Targets" instance=ExtResource("3_6legq")]
+position = Vector2(136, 8)
+
+[node name="Target4" parent="Targets" instance=ExtResource("3_6legq")]
+position = Vector2(136, 48)
+
+[node name="Target5" parent="Targets" instance=ExtResource("3_6legq")]
+position = Vector2(8, 88)
+
+[node name="Target6" parent="Targets" instance=ExtResource("3_6legq")]
+position = Vector2(8, 128)
+
+[node name="Target7" parent="Targets" instance=ExtResource("3_6legq")]
+position = Vector2(136, 88)
+
+[node name="Target8" parent="Targets" instance=ExtResource("3_6legq")]
+position = Vector2(136, 128)
+
+[node name="Target9" parent="Targets" instance=ExtResource("3_6legq")]
+position = Vector2(576, 8)
+
+[node name="Target10" parent="Targets" instance=ExtResource("3_6legq")]
+position = Vector2(576, 48)
+
+[node name="Target11" parent="Targets" instance=ExtResource("3_6legq")]
+position = Vector2(704, 8)
+
+[node name="Target12" parent="Targets" instance=ExtResource("3_6legq")]
+position = Vector2(704, 48)
+
+[node name="Target13" parent="Targets" instance=ExtResource("3_6legq")]
+position = Vector2(576, 88)
+
+[node name="Target14" parent="Targets" instance=ExtResource("3_6legq")]
+position = Vector2(576, 128)
+
+[node name="Target15" parent="Targets" instance=ExtResource("3_6legq")]
+position = Vector2(704, 88)
+
+[node name="Target16" parent="Targets" instance=ExtResource("3_6legq")]
+position = Vector2(704, 128)
+
+[node name="Target17" parent="Targets" instance=ExtResource("3_6legq")]
+position = Vector2(288, 8)
+
+[node name="Target18" parent="Targets" instance=ExtResource("3_6legq")]
+position = Vector2(288, 48)
+
+[node name="Target19" parent="Targets" instance=ExtResource("3_6legq")]
+position = Vector2(416, 8)
+
+[node name="Target20" parent="Targets" instance=ExtResource("3_6legq")]
+position = Vector2(416, 48)
+
+[node name="Target21" parent="Targets" instance=ExtResource("3_6legq")]
+position = Vector2(288, 88)
+
+[node name="Target22" parent="Targets" instance=ExtResource("3_6legq")]
+position = Vector2(288, 128)
+
+[node name="Target23" parent="Targets" instance=ExtResource("3_6legq")]
+position = Vector2(416, 88)
+
+[node name="Target24" parent="Targets" instance=ExtResource("3_6legq")]
+position = Vector2(416, 128)
+
+[node name="Target25" parent="Targets" instance=ExtResource("3_6legq")]
+position = Vector2(32, 184)
+
+[node name="Target26" parent="Targets" instance=ExtResource("3_6legq")]
+position = Vector2(32, 224)
+
+[node name="Target27" parent="Targets" instance=ExtResource("3_6legq")]
+position = Vector2(160, 184)
+
+[node name="Target28" parent="Targets" instance=ExtResource("3_6legq")]
+position = Vector2(160, 224)
+
+[node name="Target29" parent="Targets" instance=ExtResource("3_6legq")]
+position = Vector2(32, 264)
+
+[node name="Target30" parent="Targets" instance=ExtResource("3_6legq")]
+position = Vector2(32, 304)
+
+[node name="Target31" parent="Targets" instance=ExtResource("3_6legq")]
+position = Vector2(160, 264)
+
+[node name="Target32" parent="Targets" instance=ExtResource("3_6legq")]
+position = Vector2(160, 304)
+
+[node name="Target33" parent="Targets" instance=ExtResource("3_6legq")]
+position = Vector2(288, 184)
+
+[node name="Target34" parent="Targets" instance=ExtResource("3_6legq")]
+position = Vector2(288, 224)
+
+[node name="Target35" parent="Targets" instance=ExtResource("3_6legq")]
+position = Vector2(416, 184)
+
+[node name="Target36" parent="Targets" instance=ExtResource("3_6legq")]
+position = Vector2(416, 224)
+
+[node name="Target37" parent="Targets" instance=ExtResource("3_6legq")]
+position = Vector2(288, 264)
+
+[node name="Target38" parent="Targets" instance=ExtResource("3_6legq")]
+position = Vector2(288, 304)
+
+[node name="Target39" parent="Targets" instance=ExtResource("3_6legq")]
+position = Vector2(416, 264)
+
+[node name="Target40" parent="Targets" instance=ExtResource("3_6legq")]
+position = Vector2(416, 304)
+
+[node name="Target41" parent="Targets" instance=ExtResource("3_6legq")]
+position = Vector2(544, 184)
+
+[node name="Target42" parent="Targets" instance=ExtResource("3_6legq")]
+position = Vector2(544, 224)
+
+[node name="Target43" parent="Targets" instance=ExtResource("3_6legq")]
+position = Vector2(672, 184)
+
+[node name="Target44" parent="Targets" instance=ExtResource("3_6legq")]
+position = Vector2(672, 224)
+
+[node name="Target45" parent="Targets" instance=ExtResource("3_6legq")]
+position = Vector2(544, 264)
+
+[node name="Target46" parent="Targets" instance=ExtResource("3_6legq")]
+position = Vector2(544, 304)
+
+[node name="Target47" parent="Targets" instance=ExtResource("3_6legq")]
+position = Vector2(672, 264)
+
+[node name="Target48" parent="Targets" instance=ExtResource("3_6legq")]
+position = Vector2(672, 304)
+
+[node name="Target49" parent="Targets" instance=ExtResource("3_6legq")]
+position = Vector2(8, 360)
+
+[node name="Target50" parent="Targets" instance=ExtResource("3_6legq")]
+position = Vector2(8, 400)
+
+[node name="Target51" parent="Targets" instance=ExtResource("3_6legq")]
+position = Vector2(136, 360)
+
+[node name="Target52" parent="Targets" instance=ExtResource("3_6legq")]
+position = Vector2(136, 400)
+
+[node name="Target53" parent="Targets" instance=ExtResource("3_6legq")]
+position = Vector2(8, 440)
+
+[node name="Target54" parent="Targets" instance=ExtResource("3_6legq")]
+position = Vector2(8, 480)
+
+[node name="Target55" parent="Targets" instance=ExtResource("3_6legq")]
+position = Vector2(136, 440)
+
+[node name="Target56" parent="Targets" instance=ExtResource("3_6legq")]
+position = Vector2(136, 480)
+
+[node name="Target57" parent="Targets" instance=ExtResource("3_6legq")]
+position = Vector2(288, 352)
+
+[node name="Target58" parent="Targets" instance=ExtResource("3_6legq")]
+position = Vector2(288, 392)
+
+[node name="Target59" parent="Targets" instance=ExtResource("3_6legq")]
+position = Vector2(416, 352)
+
+[node name="Target60" parent="Targets" instance=ExtResource("3_6legq")]
+position = Vector2(416, 392)
+
+[node name="Target61" parent="Targets" instance=ExtResource("3_6legq")]
+position = Vector2(288, 432)
+
+[node name="Target62" parent="Targets" instance=ExtResource("3_6legq")]
+position = Vector2(288, 472)
+
+[node name="Target63" parent="Targets" instance=ExtResource("3_6legq")]
+position = Vector2(416, 432)
+
+[node name="Target64" parent="Targets" instance=ExtResource("3_6legq")]
+position = Vector2(416, 472)
+
+[node name="Target65" parent="Targets" instance=ExtResource("3_6legq")]
+position = Vector2(576, 360)
+
+[node name="Target66" parent="Targets" instance=ExtResource("3_6legq")]
+position = Vector2(576, 400)
+
+[node name="Target67" parent="Targets" instance=ExtResource("3_6legq")]
+position = Vector2(704, 360)
+
+[node name="Target68" parent="Targets" instance=ExtResource("3_6legq")]
+position = Vector2(704, 400)
+
+[node name="Target69" parent="Targets" instance=ExtResource("3_6legq")]
+position = Vector2(576, 440)
+
+[node name="Target70" parent="Targets" instance=ExtResource("3_6legq")]
+position = Vector2(576, 480)
+
+[node name="Target71" parent="Targets" instance=ExtResource("3_6legq")]
+position = Vector2(704, 440)
+
+[node name="Target72" parent="Targets" instance=ExtResource("3_6legq")]
+position = Vector2(704, 480)
+
+[node name="OutofBounds" type="Area2D" parent="."]
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="OutofBounds"]
+position = Vector2(416, 972.5)
+shape = SubResource("RectangleShape2D_xoruu")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 304.0
+offset_top = 568.0
+offset_right = 544.0
+offset_bottom = 680.0
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 41
+text = "Try Again?"
+
+[connection signal="body_entered" from="OutofBounds" to="." method="_on_area_2d_body_entered"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
