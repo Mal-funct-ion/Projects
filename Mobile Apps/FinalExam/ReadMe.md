@@ -1,0 +1,2 @@
+# Final Exam/Planner App
+This project was the Final Exam for my CMSC 445: Mobile Application Development class. The aim of this exam was to create a multi-screen application where users can see and modify plans. The list screen lists out all made plans, the create screen takes a String input from the user that will become the title of a plan while the plan screen lists out all steps, and allows users to create new ones.

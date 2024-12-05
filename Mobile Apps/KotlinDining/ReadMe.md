@@ -1,0 +1,2 @@
+# First MidtermExam/Dining Review App
+In this project, the Review and ReviewsModel, with the exception of the createReview() function, were provided. The goal was to make a working interface that would allow for users to create and save reviews for meals. 
