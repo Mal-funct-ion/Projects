@@ -1,0 +1,1 @@
+The Projects in this folder contain the Back Ends for online applications. These are developed using Java and SpringBoot with SQL databases.
